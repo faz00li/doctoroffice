@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model DoctorOffice.Models.Patient
+
+<h1 class="display-6">Confirm Delete for @Model.FirstName @Model.LastName</h1>
+
+<p>@Html.ActionLink("Back To Patient List", "Index")</p>
+
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete" />
+}

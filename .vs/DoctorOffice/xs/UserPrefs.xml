@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{87C6F49E-187F-4213-AC20-D44419E5CA1E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Patients/Edit.cshtml">
+    <Files>
+      <File FileName="Controllers/PatientsController.cs" Line="58" Column="30" />
+      <File FileName="Views/Patients/Index.cshtml" />
+      <File FileName="Views/Patients/Details.cshtml" />
+      <File FileName="Views/Patients/Create.cshtml" />
+      <File FileName="Views/Patients/Delete.cshtml" />
+      <File FileName="Views/Patients/Edit.cshtml" Line="26" Column="64" />
+      <File FileName="Controllers/DoctorsController.cs" Line="84" Column="26" NotebookId="1" />
+      <File FileName="Views/Doctors/Index.cshtml" NotebookId="1" />
+      <File FileName="Views/Doctors/Details.cshtml" NotebookId="1" />
+      <File FileName="Views/Doctors/Create.cshtml" NotebookId="1" />
+      <File FileName="Views/Doctors/Delete.cshtml" NotebookId="1" />
+      <File FileName="Views/Doctors/Edit.cshtml" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DoctorOffice" expanded="True">
+            <Node name="DoctorOffice" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Doctors" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Patients" expanded="True">
+                  <Node name="Edit.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DoctorOffice PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

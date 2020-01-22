@@ -1,0 +1,36 @@
+﻿@{
+  Layout = "_Layout";
+}
+
+@model DoctorOffice.Models.Doctor
+
+<h1 class="display-4">@Model.FirstName @Model.LastName Details</h1>
+
+<p>@Html.DisplayNameFor(model => model.FirstName) : @Html.DisplayFor(model => model.FirstName)</p>
+<p>@Html.DisplayNameFor(model => model.LastName) : @Html.DisplayFor(model => model.LastName)</p>
+
+@if(Model.Patients.Count != 0)
+{
+<ul>
+    @foreach (var join in Model.Patients)
+    {
+      <li>@join.Patient.LastName</li>
+    }
+</ul>
+}
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.DoctorId)
+  @Html.LabelFor(model => model.FirstName)
+  @Html.EditorFor(model => model.FirstName)
+
+  @Html.LabelFor(model => model.LastName)
+  @Html.Editor("LastName");
+
+  @Html.Label("Select Patient")
+  @Html.DropDownList("PatientId")
+
+  <input type="submit" value="Update Patient Info" class="btn btn-default" />
+
+}

@@ -1,0 +1,30 @@
+﻿@{
+  Layout = "_Layout";
+}
+
+@model DoctorOffice.Models.Doctor
+
+<h1 class="display-4">Doctor: @Model.FirstName  @Model.LastName</h1>
+
+<p>@Html.ActionLink("Edit Info", "Edit", new { id = Model.DoctorId }) | @Html.ActionLink("Add Patient", "AddPatient", new { id = Model.DoctorId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.DoctorId }) || @Html.ActionLink("Back To Doctors List", "Index")</p>
+
+<h3>Patient Rostert</h3>
+
+
+@if (Model.Patients.Count == 0)
+{
+  <p>Doctor Patient Roster Empty</p>
+}
+else
+{
+  @foreach(var join in Model.Patients)
+  {
+    @using (Html.BeginForm("DeletePatient", "Doctors"))
+    {
+      @Html.Hidden("joinId", join.PatientId)
+      <p><input type="submit" value="delete" /> @Html.ActionLink($"{join.Patient.FirstName} {join.Patient.LastName}", "Details", "Patients", new { id = join.Patient.PatientId })</p>
+
+    }
+  }
+}
+

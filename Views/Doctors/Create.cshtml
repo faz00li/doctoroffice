@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model DoctorOffice.Models.Doctor
+
+<h1 class="display-4">Add New Doctor</h1>
+<p>@Html.ActionLink("Back to Doctor List", "Index")</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(model => model.FirstName)
+        @Html.TextBoxFor(model => model.FirstName)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.LastName)
+        @Html.TextBoxFor(model => model.LastName)
+    </p>
+          
+    <input type="submit" value="Add Doctor" />
+}
+
+
+
+
+
+
